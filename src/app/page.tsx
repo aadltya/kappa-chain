@@ -1,8 +1,10 @@
-import Image from "next/image";
-import { DotBackgroundDemo } from "./components/DotBackground";
+import { SpotlightNew } from "./components/SpotlightNew";
 
 export default function Home() {
   return (
-    <DotBackgroundDemo />
+    <div>
+      <SpotlightNew />
+      <div className="bg-neutral-950 h-screen w-full" ></div>
+    </div>
   );
 }
