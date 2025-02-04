@@ -2,12 +2,13 @@ import Image from "next/image";
 import { Exo } from "next/font/google";
 import React from "react";
 import Link from "next/link";
-import logo from "./../../../public/favicon-96x96.png"
+import { Twitter, Github } from "lucide-react";
+import logo from "./../../../public/favicon-96x96.png";
 
 const exoFont = Exo({
     subsets: ['latin'],
     weight: '600',
-})
+});
 
 export function Navbar() {
   return (
@@ -18,18 +19,26 @@ export function Navbar() {
           alt="logo"  
           width={30}
           height={30}
-          className="cursor-pointer"
+          className="cursor-pointer rounded-lg"
         />
       </Link>
 
-      <ul className="flex space-x-8">
-        <li className="text-slate-400 hover:text-white cursor-pointer">CA</li>
-        <li className="text-slate-400 hover:text-white cursor-pointer">
+      <ul className="flex items-center space-x-8">
+        <li className="text-white hover:text-slate-400 cursor-pointer">CA</li>
+        <li className="text-white hover:text-slate-400 cursor-pointer">
           <Link href="/pricing">Pricing</Link>
         </li>
-        <li className="text-slate-400 hover:text-white cursor-pointer">About</li>
-        <li className="text-slate-400 hover:text-white cursor-pointer">Twitter</li>
-        <li className="text-slate-400 hover:text-white cursor-pointer">Github</li>
+        <li className="text-white hover:text-slate-400 cursor-pointer">About</li>
+        <li className="text-white hover:text-slate-400 cursor-pointer">
+          <Link href="https://x.com/Kappaa_Ai" target="_blank" rel="noopener noreferrer">
+            <Twitter className="w-5 h-5" />
+          </Link>
+        </li>
+        <li className="text-white hover:text-slate-400 cursor-pointer">
+          <Link href="https://github.com/KappaAl" target="_blank" rel="noopener noreferrer">
+            <Github className="w-5 h-5" />
+          </Link>
+        </li>
       </ul>
     </nav>
   );
