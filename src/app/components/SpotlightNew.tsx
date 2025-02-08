@@ -18,8 +18,8 @@ export function SpotlightNew() {
               Stablecoin for <br /> Global Payments.
             </h1>
             <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-start">
-            Power instant global transfers with a single integration.
-            Grow more, pay less, move faster.
+              Power instant global transfers with a single integration.
+              Grow more, pay less, move faster.
             </p>
             <AnimatedShinyTextDemo />
           </div>
