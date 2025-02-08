@@ -1,12 +1,10 @@
 import { ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AnimatedGradientText } from "./ui/animated-gradient-text";
-import { CoolMode } from "./ui/cool-mode";
 
 export function AnimatedGradientTextDemo() {
   return (
     <div className="z-10 absolute flex min-h-64 items-center justify-center">
-      <CoolMode>
       <AnimatedGradientText>
           <span
             className={cn(
@@ -28,7 +26,6 @@ export function AnimatedGradientTextDemo() {
         {/* <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />{" "} */}
         <ChevronRight className="ml-1 text-white size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
       </AnimatedGradientText>
-      </CoolMode>
     </div>
   );
 }

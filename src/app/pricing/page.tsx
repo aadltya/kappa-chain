@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Check } from 'lucide-react';
 import { cn } from './../lib/utils';
 import { Button } from './../components/ui/button';
-import { CoolMode } from '../components/ui/cool-mode';
 
 function App() {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -140,7 +139,6 @@ function App() {
                 </div>
               </div>
               
-              <CoolMode>
                 <Button
                   className={cn(
                     "w-full text-base transition-all duration-300",
@@ -151,7 +149,6 @@ function App() {
                 >
                   Buy plan
                 </Button>
-              </CoolMode>
 
               <ul className="mt-8 space-y-4 flex-1">
                 {tier.features.map((feature) => (
