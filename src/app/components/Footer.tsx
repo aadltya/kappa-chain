@@ -26,7 +26,7 @@ export const FooterDev = () =>  {
                             <a href="https://x.com/Kappaa_Ai" target="_blank" className="hover:underline">Twitter</a>
                         </li>
                         <li className="hover:text-gray-500 text-white" >
-                            <a href="" target="_blank" className="hover:underline">Contact Address</a>
+                            <a href="" target="_blank" className="hover:underline">Contact Address ^</a>
                         </li>
                     </ul>
                 </div>
