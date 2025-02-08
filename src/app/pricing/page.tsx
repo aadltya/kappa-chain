@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Check } from 'lucide-react';
 import { cn } from './../lib/utils';
 import { Button } from './../components/ui/button';
+import { CoolMode } from '../components/ui/cool-mode';
 
 function App() {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -138,17 +139,19 @@ function App() {
                   </span>
                 </div>
               </div>
-
-              <Button
-                className={cn(
-                  "w-full text-base transition-all duration-300",
-                  tier.featured
-                    ? "bg-violet-600 hover:bg-violet-500 text-white shadow-[0_0_15px_rgba(139,92,246,0.3)]"
-                    : "bg-gray-900 hover:bg-gray-800 text-white border border-violet-500/30 hover:border-violet-500/50"
-                )}
-              >
-                Buy plan
-              </Button>
+              
+              <CoolMode>
+                <Button
+                  className={cn(
+                    "w-full text-base transition-all duration-300",
+                    tier.featured
+                      ? "bg-violet-600 hover:bg-violet-500 text-white shadow-[0_0_15px_rgba(139,92,246,0.3)]"
+                      : "bg-gray-900 hover:bg-gray-800 text-white border border-violet-500/30 hover:border-violet-500/50"
+                  )}
+                >
+                  Buy plan
+                </Button>
+              </CoolMode>
 
               <ul className="mt-8 space-y-4 flex-1">
                 {tier.features.map((feature) => (
