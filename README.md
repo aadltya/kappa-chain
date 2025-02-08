@@ -1,36 +1,108 @@
-This is a [kappa Ai](https://github.com/kappaai)
+# Stablecoin API for Global Payments
 
-## Getting Started
+### Power Instant Global Transfers with a Single Integration
 
-First, run the development server:
+Grow more, pay less, and move faster with Kappa’s stablecoin API. Simplify global payments and empower your business to scale without borders.
+
+## Key Features
+
+- **Global Payments 24/7:** Process payments anytime, anywhere with instant settlements.
+- **Seamless Stablecoin Integration:** Easily integrate stablecoins into your payment flow with developer-friendly APIs.
+- **Onramp and Offramp:** Connect blockchain wallets, get real-time quotes, and enjoy low fees.
+- **Regulatory Compliance:** We handle all regulatory, compliance, and technical hurdles.
+
+## Use Cases
+
+- **Global Payroll:** Pay contractors in any currency, no matter their location.
+- **Enterprise Payouts:** Manage mass global payments effortlessly.
+- **Merchant Settlement:** Expedite payouts with automatic currency consolidation.
+- **Business Invoicing:** Streamline invoicing processes using stablecoin transactions.
+- **Remittances:** Offer fast and affordable remittance solutions.
+
+## Developer Guide
+
+### Installation
+
+To get started, install the Kappa SDK:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install kappa --legacy-peer-deps
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Quick Start Example
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```javascript
+import { KappaAi } from 'kappa';
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+const Kappa = new Kappa('<api_key>');
 
-## Learn More
+(async function() {
+  // Light KYC
+  await Kappa.customers.create('<instance_id>', {
+    type: "individual",
+    kyc_type: "light",
+    email: "email@example.com",
+    tax_id: "12345678",
+    country: "US",
+    first_name: "John",
+    last_name: "Doe",
+    date_of_birth: "1998-01-01T00:00:00Z",
+  });
 
-To learn more about Next.js, take a look at the following resources:
+  // Standard KYC
+  await Kappa.customers.create('<instance_id>', {
+    type: "individual",
+    kyc_type: "standard",
+    email: "email@example.com",
+    tax_id: "12345678",
+    address_line_1: "8 The Green",
+    address_line_2: "#12345",
+    city: "Dover",
+    state_province_region: "DE",
+    country: "US",
+    postal_code: "02050",
+    ip_address: "127.0.0.1",
+    phone_number: "+1234567890",
+    proof_of_address_doc_type: "UTILITY_BILL",
+    proof_of_address_doc_file: "https://example.com/proof_of_address.jpg",
+    first_name: "John",
+    last_name: "Doe",
+    date_of_birth: "1998-01-01T00:00:00Z",
+    id_doc_country: "US",
+    id_doc_type: "PASSPORT",
+    id_doc_front_file: "https://example.com/id_doc_front.jpg"
+  });
+})();
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **KYC/B:** Streamlined customer verification
+- **Bank Account Support:** Connect bank accounts for seamless payments
+- **Crypto to Fiat:** Effortless currency conversions
+- **Blockchain Wallet Integration:** Connect any wallet
+- **Fiat to Crypto:** Quick and secure transactions
 
-## Deploy on Vercel
+## Documentation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For detailed API documentation, visit our [Docs](https://example.com/docs).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Get Started
+
+- [Request a Demo]()
+- [Go to Docs]()
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+**Kappa, Inc.**
+
+- Email: [support@kappahelp.com](mailto\:support@example.com)
+
+## Disclaimer
+
+Kappa, Inc. is a financial technology company and is a registered Money Services Business with the US Treasury's Financial Crimes Enforcement Network (FinCEN). We are not a bank. By creating and using your account at Kappa, you agree to Kappa, Inc.'s Terms of Service, to all applicable laws and regulations, and acknowledge that you are responsible for compliance with any applicable local laws.
+
