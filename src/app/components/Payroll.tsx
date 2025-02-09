@@ -1,4 +1,5 @@
 import { AnimatedBeamDemo } from "./AnimatedBeamDemo";
+import { CompareDemo } from "./CompareDemo";
 import { SparklesText } from "./ui/sparkles-text";
 
 export function Payroll() {
@@ -20,7 +21,9 @@ export function Payroll() {
         </span>
       </div>
       <div className="bg-neutral-950 grid grid-cols-2 gap-8 p-10 w-11/12 mx-auto h-[calc(100vh-110px)]">
-        <div className="bg-neutral-900 rounded-lg h-full w-full"></div>
+        <div className="bg-neutral-950 rounded-lg h-full w-full">
+          <CompareDemo />
+        </div>
 
         <div className="flex flex-col justify-center items-center h-full rounded-lg">
           <p className="text-neutral-300 text-sm px-14 font-medium mt-14 leading-relaxed tracking-wide text-center">
