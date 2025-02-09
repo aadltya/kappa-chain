@@ -5,6 +5,7 @@ import { Spotlight } from "./spotlight-new";
 import { TextRevealCardPreview } from "./TextRevealCardPreview";
 import { AnimatedGradientTextDemo } from "./AnimatedGradientTextDemo";
 import { AnimatedShinyTextDemo } from "./AnimatedShinyTextDemo";
+import { ScriptCopyBtn } from "./ScriptCopyBtn";
 
 export function SpotlightNew() {
   return (
@@ -22,6 +23,16 @@ export function SpotlightNew() {
               Grow more, pay less, move faster.
             </p>
             <AnimatedShinyTextDemo />
+            <ScriptCopyBtn
+              showMultiplePackageOptions={true} 
+              codeLanguage = "bash"
+              lightTheme = "dark-plus"
+              darkTheme = "dark-plus"
+              commandMap = {{
+                "Contact Address": "updated soon",
+              }}
+              className = ""
+            />
           </div>
           <div className="w-1/2 flex items-center justify-center">
             <TextRevealCardPreview />
