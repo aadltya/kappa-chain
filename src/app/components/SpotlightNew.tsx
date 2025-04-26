@@ -29,7 +29,7 @@ export function SpotlightNew() {
               lightTheme = "dark-plus"
               darkTheme = "dark-plus"
               commandMap = {{
-                "Contact Address": "updated soon",
+                "Contact Address": "CAfvQJFHqbf4jPqKQRJPFpYTUDBh5Pi1J3Ta1scxpump",
               }}
               className = ""
             />
