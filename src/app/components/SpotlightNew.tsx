@@ -23,7 +23,7 @@ export function SpotlightNew() {
               Grow more, pay less, move faster.
             </p>
             <AnimatedShinyTextDemo />
-            <ScriptCopyBtn
+            {/* <ScriptCopyBtn
               showMultiplePackageOptions={true} 
               codeLanguage = "bash"
               lightTheme = "dark-plus"
@@ -32,7 +32,7 @@ export function SpotlightNew() {
                 "Contact Address": "CAfvQJFHqbf4jPqKQRJPFpYTUDBh5Pi1J3Ta1scxpump",
               }}
               className = ""
-            />
+            /> */}
           </div>
           <div className="w-1/2 flex items-center justify-center">
             <TextRevealCardPreview />
